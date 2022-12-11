@@ -21,6 +21,9 @@ all: credit
 		@sudo mkdir -p /home/ecayir/data/wp
 		@sudo mkdir -p /home/ecayir/data/prt
 		@docker-compose -f srcs/docker-compose.yml up --build -d
+		@echo "$(RED)╔════════════════════════════║NOTE:║════════════════════════╗$(RESET)"
+		@echo "$(RED)║   $(BLUE) You can see The Containers logs using $(YELLOW)make logs        $(RED)║$(RESET)"
+		@echo "$(RED)╚═══════════════════════════════════════════════════════════╝$(RESET)"
 		@sudo make up
 up:
 		@sudo mkdir -p /home/ecayir/data/db
