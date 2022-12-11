@@ -1,3 +1,10 @@
+# Colors variables
+RED = \033[1;31m
+GREEN = \033[1;32m
+YELLOW = \033[1;33m
+BLUE = \033[1;34m
+RESET = \033[0m
+
 all: credit
 		@sudo mkdir -p /home/ecayir/data/db
 		@sudo mkdir -p /home/ecayir/data/wp
@@ -18,16 +25,16 @@ clean:
 		@./clean.sh
 
 info:
-		@echo "=============================== IMAGES ==============================="
+		@echo "$(GREEN)██████████████████████████ IMAGES ███████████████████████████$(RESET)"
 		@docker images
 		@echo
-		@echo "============================= CONTAINERS ============================="
+		@echo "$(YELLOW)██████████████████████ ALL CONTAINERS ███████████████████████$(RESET)"
 		@docker ps -a
 		@echo
-		@echo "=============== NETWORKS ==============="
+		@echo "$(YELLOW)██████████████████████ NETWORKS ███████████████████████$(RESET)"
 		@docker network ls
 		@echo
-		@echo "====== VOLUMES ======"
+		@echo "$(GREEN)█████████████████████ Volumes ██████████████████████$(RESET)"
 		@docker volume ls
 
 .PHONY:	all up down clean info
