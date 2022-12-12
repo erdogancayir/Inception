@@ -19,4 +19,4 @@ EXPOSE 80
 #bknz pdf
 CMD ["nginx", "-g", "daemon off;"]
 #-g global değişkeni set eder, deamon off -> ana process haline getirir.
-#DOCKERFILEE
+#DOCKERFILE
