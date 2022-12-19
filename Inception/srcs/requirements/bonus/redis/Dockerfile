@@ -14,3 +14,7 @@ EXPOSE 6379
 #redis portu
 CMD [ "/usr/bin/redis-server", "/etc/redis.conf"]
 #redis sunucusu çalıştırılıyor
+
+#REDIS
+
+#DOCKERFILE
