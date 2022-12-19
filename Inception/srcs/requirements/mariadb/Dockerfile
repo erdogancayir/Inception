@@ -13,3 +13,7 @@ RUN service mysql start && mysql < createdb.sql && rm -f createdb.sql
 EXPOSE 3306
 #mysql portu
 CMD /usr/bin/mysqld_safe
+#MARIADB
+#DOCKERFILE
+#mariadb
+#dockerfile
