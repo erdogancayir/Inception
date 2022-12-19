@@ -12,3 +12,6 @@ RUN mv adminer-4.8.1.php index.php
 
 CMD ["php", "-S", "0.0.0.0:8080"]
 #8080 portu adminer için ayrılıyor
+#adminer
+#dockerfile
+#partofbonus
