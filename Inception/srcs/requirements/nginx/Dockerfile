@@ -21,3 +21,4 @@ CMD ["nginx", "-g", "daemon off;"]
 #-g global değişkeni set eder, deamon off -> ana process haline getirir.
 #DOCKERFILEE
 #nginxDockerfile
+#nginx
