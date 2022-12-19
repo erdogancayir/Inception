@@ -8,4 +8,7 @@ COPY ./conf /
 CMD ["node", "run.js"]
 
 #DOCKERFILE
+
+#partofbonus
+
 #SITE
