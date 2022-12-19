@@ -12,3 +12,6 @@ EXPOSE 9000
 #9000 çünkü php-fpm daha hızlı xd
 
 CMD ["bash", "/var/www/setup.sh"]
+
+#wordpress
+#dockerfile
