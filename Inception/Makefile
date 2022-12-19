@@ -9,7 +9,6 @@
 #    Updated: 2021/12/21 21:38:40 by ecayir           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-# Colors variables
 RED = \033[1;31m
 GREEN = \033[1;32m
 YELLOW = \033[1;33m
@@ -33,11 +32,9 @@ up:
 
 down:
 		@docker-compose -f srcs/docker-compose.yml down
-
 clean:
 		@chmod 744 clean.sh
 		@./clean.sh
-
 info:
 		@echo "$(GREEN)██████████████████████████ IMAGES ███████████████████████████$(RESET)"
 		@docker images
@@ -50,9 +47,7 @@ info:
 		@echo
 		@echo "$(GREEN)█████████████████████ Volumes ██████████████████████$(RESET)"
 		@docker volume ls
-
 .PHONY:	all up down clean info
-
 credit:
 	@echo "██╗███╗   ██╗ ██████╗███████╗██████╗ ████████╗██╗ ██████╗ ███╗   ██╗"
 	@echo "██║████╗  ██║██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║"
