@@ -14,3 +14,4 @@ docker-compose, NGINX, WordPress + php-fpm, MariaDB, volume for wp and db <br>
 ### You must change /home/ecayir for yourself. <br>
 communication
 You can send any questions and suggestions about the project by e-mail.
+ <br>
